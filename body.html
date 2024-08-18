@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal potfolio page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+          background-color: #000; /* or background-color: black; */
+        }
+      </style>
+</head>
+<body>
+    
+    <div class="syed">
+        
+        <nav>
+            <img src="assets/logo.png" width="150" height="150">
+            <ul>
+                <li><a href="body.html">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">HIRE NOW</a></li>
+            </ul>
+        </nav>
+        <div class="context">
+            <h1>Hey Syed <span>Suffiyan</span> here,</h1>
+            <p><b>Welcome to my official portfolio page</b><br><br>
+                I am pursuing B.E in Computer Science and Engineering at Global Acdemy of Tecchnology<br>
+                in Bangalore is a well-regarded engineering institution offering a range of UG and PG<br>programs.
+                known for its strong emphasis on technical education.<br> 
+            <br><b>Details about my experience in web devolpment</b></p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">SKILLS</p>
+                <p class="tab-links"onclick="opentab('experience')">EXPERIENCE</p>
+                <p class="tab-links" onclick="opentab('education')">EDUCATION</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>UI/UX</span><br>Beginner</li>
+                    <li><span>ReactJS</span><br>Intermediate</li>
+                    <li><span>BootStrap</span><br>Intermediate</li>
+                    <li><span>MongoDB</span><br>Basics</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>2024</span><br>web development intern at Nuevera Infotech</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2019-10th</span><br>SDA High School<br>Percentage: 83</li>
+                    <li><span>2021-2nd PUC</span><br>Jain College<br>Percentage: 94.5</li>
+                    <li><span>2024-BE-3rd year</span><br>Global Academy of Technology<br>current cgpa: 9.75</li>    
+                </ul>
+            </div><br><br>
+            <a class="new" href="syedCV.pdf" download="syedCV.pdf">DOWNLOAD CV</a>
+            <br>
+            <a class="new" href="https://github.com/R-Syed-Suffiyan">GIT HUB</a>
+        <div class="images">
+            <img src="assets/new.png" class="shape">
+        </div><br><br>
+     <div class="container">
+        <h1>EXPLORE MY WORKS</h1>
+        <p>MY RECENT PROJECTS</p>
+    </div>
+        <div class="card-container">
+            <div class="card">
+                <img src="assets/med.jpg" height="150" width="250"><br>
+                <h4>Disease Prediction and Medicine Recommendation System</h4>
+                <a href="https://github.com/R-Syed-Suffiyan/MEDICARE-SYSTEM">CLICK HERE FOR CODE</a>
+            </div>
+            <div class="card">
+                <img src="assets/youtube.jpg" height="150" width="250">
+                <h4>Youtube Comments Sentiment Analysis</h4>
+                <a href="https://github.com/R-Syed-Suffiyan/Youtube-Comments-Sentiment-Analysis">CLICK HERE FOR CODE</a>
+            </div>
+            <div class="card">
+                <img src="assets/cal.png" height="150" width="250">
+                <h3>Calculator</h3>
+                <a href="https://github.com/R-Syed-Suffiyan/Calculator">CLICK HERE FOR CODE</a>
+            </div>
+            <div class="card">
+                <img src="assets/books.jpg" height="150" width="250">
+                <h3>Online Book Store</h3>
+                <a href="https://github.com/R-Syed-Suffiyan/Online-Book-Store">CLICK HERE FOR CODE</a>
+            </div>
+        </div>
+        <div class="card-container">
+        <div class="card">
+            <img src="assets/currency.jpg" height="150" width="250"><br>
+            <h4>Currency-Converter</h4>
+            <a href="https://github.com/R-Syed-Suffiyan/Currency-Converter">CLICK HERE FOR CODE</a>
+        </div>
+        </div><br><br>
+        <div class="container">
+            <h1>CONTACT INFO</h1>
+        </div>
+        <div class="contact">
+            <p>PHONE : 7892836809</p>
+            <p>MAIL : syedsuffiyan2003@gmail.com</p>
+        </div>
+
+
+    </div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+</body>
+</html>
+
+<!--.
+}-->
